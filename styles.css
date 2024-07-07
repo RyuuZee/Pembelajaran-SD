@@ -1,11 +1,11 @@
-/* Reset default browser styles */
+/* Gaya reset default browser */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and typography */
+/* Pengaturan umum untuk body dan tipografi */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header styling */
+/* Styling untuk header */
 header {
     background-color: #3fc40b;
     color: white;
@@ -21,12 +21,20 @@ header {
     text-align: center;
 }
 
+/* Atur gambar di header agar responsif */
+header img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Anda bisa menyesuaikan max-width sesuai keinginan */
+}
+
+/* Styling untuk heading di header */
 header h1 {
     margin: 0;
     font-size: 2.5rem;
 }
 
-/* Navigation styling */
+/* Pengaturan navigasi */
 nav ul {
     list-style: none;
     padding: 0;
@@ -48,7 +56,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Main content styling */
+/* Pengaturan konten utama */
 main {
     padding: 20px;
     max-width: 900px;
@@ -67,19 +75,18 @@ main {
 
 .kelas p {
     font-size: 1.2rem;
-    margin-bottom: 10px;
 }
 
+/* Pengaturan gambar dalam konten kelas agar responsif */
 .kelas img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    max-width: 400px; /* Sesuaikan dengan ukuran yang Anda inginkan */
     display: block;
-    margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    margin: 10px auto; /* Center gambar dengan margin auto */
 }
 
-/* Footer styling */
+/* Styling untuk footer */
 footer {
     background-color: #333;
     color: white;
@@ -90,8 +97,8 @@ footer {
     bottom: 0;
 }
 
-/* Responsive styling */
-@media (max-width: 768px) {
+/* Media Queries untuk perangkat lebih kecil */
+@media (max-width: 600px) {
     header h1 {
         font-size: 2rem;
     }
@@ -116,35 +123,8 @@ footer {
     .kelas p {
         font-size: 1rem;
     }
-}
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    nav ul {
-        text-align: left;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        font-size: 0.9rem;
-    }
-
-    main {
-        padding: 5px;
-    }
-
-    .kelas h2 {
-        font-size: 1.2rem;
-    }
-
-    .kelas p {
-        font-size: 0.9rem;
+    .kelas img {
+        max-width: 100%;
     }
 }
